@@ -1,0 +1,55 @@
+{
+    "name": "hamcq/share",
+    "description": "for wechat mini app share",
+    "keywords": [
+        "flarum"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "*"
+    },
+    "authors": [
+        {
+            "name": "emin.lin",
+            "email": "emin.lin@live.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "HamCQ\\Share\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Share",
+            "category": "",
+            "icon": {
+                "name": "fas fa-share",
+                "backgroundColor": "#e74c3c",
+                "color": "#fff"
+            }
+        },
+        "flarum-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": true,
+                "css": true,
+                "locale": true,
+                "gitConf": true,
+                "githubActions": true,
+                "prettier": true,
+                "typescript": false,
+                "bundlewatch": false,
+                "backendTesting": false,
+                "editorConfig": true,
+                "styleci": true
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
